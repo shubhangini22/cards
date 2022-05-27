@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+        <!--link for css and javascript file-->
+
+    </head>
+    <body>
+        <div id="container">
+        <div class="box-container">
+        <div class="box">
+            <h1 class="heading"><u>Nature</u></h1>
+        <div class="content">
+            <h3>"Nature" refers to the phenomena of the physical world, and also to life in general. It ranges in scale from the subatomic to the cosmic. The term "nature" may refer to 
+                living plants and animals, geological processes, weather, and physics, such as matter and energy.</h3>
+        </div>
+        <div class="image">
+        <img src="p1.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <div>
+        <button id="load-more" onclick="duplicate()">+</button>
+    </div>
+    <div>
+        <button id="r-more" onclick="duplicate()">+</button>
+    </div>
+</div>
+
+<script>
+  
+  function duplicate()
+{
+var div = duplicate("div");
+    div.id = "container";
+div.appendChild(duplicate("container"));
+}
+
+</script>
+
+
+        </body>
+</html>
